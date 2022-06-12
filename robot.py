@@ -11,10 +11,11 @@ class LeftDistanceSensor():
         self.ps = ps
         self.angle = -30
 
-    def distance(self):
+    def get_distance(self):
         self.ps.pan(self.angle)
         time.sleep(.2)
         return self.ds.read_mm()/1000.0  # meters
+    distance = property(get_distance)
 
 class RightDistanceSensor():
     def __init__(self, ds, ps):
@@ -22,10 +23,12 @@ class RightDistanceSensor():
         self.ps = ps
         self.angle = 30
 
-    def distance(self):
+    def get_distance(self):
         self.ps.pan(self.angle)
         time.sleep(.2)
         return self.ds.read_mm()/1000.0  # meters
+
+    distance = property(get_distance)
 
 class Pan_Servo():
     def __init__(self, egpg):

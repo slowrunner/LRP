@@ -6,11 +6,11 @@ import robot
 from time import sleep
 r = robot.Robot()
 
-# Read left distance sensor
-print("l dist:", r.left_distance_sensor.distance())
+# Read left distance sensor  (property)
+print("l dist:", r.left_distance_sensor.distance)
 
-# Read right distance sensor
-print("r dist:", r.right_distance_sensor.distance())
+# Read right distance sensor (property)
+print("r dist:", r.right_distance_sensor.distance)
 sleep(1)
 
 # Center pan servo
