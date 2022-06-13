@@ -20,8 +20,8 @@ class ObstacleAvoidingBehavior:
     def run(self):
         while True:
             # Get the sensor readings in meters
-            left_distance = self.robot.left_distance_sensor.distance()
-            right_distance = self.robot.right_distance_sensor.distance()
+            left_distance = self.robot.left_distance_sensor.distance
+            right_distance = self.robot.right_distance_sensor.distance
             print("Left: {:.2f}, Right: {:.2f}".format(left_distance, right_distance))
             # and drive
             left_speed = self.get_motor_speed(left_distance)
