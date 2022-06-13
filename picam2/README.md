@@ -18,3 +18,13 @@ Useful options:
 --width 320  --height 240
 ```
 
+
+# Installing picamera2
+
+
+
+# Testing picamera2
+
+$ wget https://raw.githubusercontent.com/raspberrypi/picamera2/main/examples/capture_headless.py
+
+
