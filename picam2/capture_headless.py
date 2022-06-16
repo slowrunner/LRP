@@ -1,5 +1,23 @@
 #!//usr/bin/python3
 
+# FILE:  capture_headless.py
+
+"""
+OUTPUT:  
+
+config: {'use_case': 'still',  
+'transform': <libcamera._libcamera.Transform object at 0xb386c880>,  
+'colour_space': <libcamera._libcamera.ColorSpace object at 0xb386c400>,  
+'buffer_count': 1,  
+'main': {'format': 'BGR888', 'size': (320, 240)},  
+'lores': None, 'raw': None,  
+'controls': {'NoiseReductionMode': <NoiseReductionMode.HighQuality: 2>, 'FrameDurationLimits': (1000,)},  
+'display': None, 'encode': None}  
+
+config["transform"].hflip True  
+config["transform"].vflip True  
+"""
+
 from picamera2 import Picamera2
 import libcamera
 
