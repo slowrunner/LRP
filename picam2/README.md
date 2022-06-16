@@ -37,7 +37,7 @@ $ wget https://raw.githubusercontent.com/raspberrypi/picamera2/main/examples/cap
 
 $ python3 capture_headless.py
 ```
-local copy: (updated to transform vflip and hflip )
+local copy: (updated to transform vflip and hflip, and reduce size.  Documented various ways to set and print config items. )
 
 ```
 mjpeg_server.py:  Stream 640x480 video to browser at port 8000
